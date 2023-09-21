@@ -1,0 +1,96 @@
+name: train
+run_id: install_deps
+env TMPDIR: /var/folders/qx/0xgmv3nd2tdczjpql2qv44q00000gp/T/
+env TERM: xterm-256color
+env HOME: /Users/adash
+env LANG: en_CA.UTF-8
+env PATH: /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/.tox/test_package/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin
+env PIP_DISABLE_PIP_VERSION_CHECK: 1
+env PYTHONIOENCODING: utf-8
+env PYTHONPATH: .
+env PYTHONHASHSEED: 0
+env TOX_ENV_NAME: train
+env TOX_WORK_DIR: /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/.tox
+env TOX_ENV_DIR: /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/.tox/test_package
+env VIRTUAL_ENV: /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/.tox/test_package
+env COLUMNS: 201
+env LINES: 59
+metadata pid: 84945
+cwd: /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package
+allow: /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/.tox/test_package/bin/*:train
+cmd: pip install -r '/Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/test_requirements.txt'
+exit_code: 0
+Collecting numpy<2.0.0,>=1.21.0 (from -r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/requirements.txt (line 4))
+  Obtaining dependency information for numpy<2.0.0,>=1.21.0 from https://files.pythonhosted.org/packages/0f/a8/5057b97c395a710999b5697ffedd648caee82c24a29595952d26bd750155/numpy-1.25.2-cp39-cp39-macosx_11_0_arm64.whl.metadata
+  Using cached numpy-1.25.2-cp39-cp39-macosx_11_0_arm64.whl.metadata (5.6 kB)
+Collecting pandas<2.0.0,>=1.3.5 (from -r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/requirements.txt (line 5))
+  Using cached pandas-1.5.3-cp39-cp39-macosx_11_0_arm64.whl (11.0 MB)
+Collecting pydantic<2.0.0,>=1.8.1 (from -r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/requirements.txt (line 6))
+  Obtaining dependency information for pydantic<2.0.0,>=1.8.1 from https://files.pythonhosted.org/packages/24/5c/7d600cf0c0c4fa577c33bafd4a7ee567bb19552dbd093b0d4c756ea6cc13/pydantic-1.10.12-cp39-cp39-macosx_11_0_arm64.whl.metadata
+  Using cached pydantic-1.10.12-cp39-cp39-macosx_11_0_arm64.whl.metadata (149 kB)
+Collecting scikit-learn<2.0.0,>=1.1.3 (from -r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/requirements.txt (line 7))
+  Obtaining dependency information for scikit-learn<2.0.0,>=1.1.3 from https://files.pythonhosted.org/packages/63/87/6cd5450f0385966bf2a5b865a2043cf68c2a41676193afdbccb40f8719dc/scikit_learn-1.3.0-cp39-cp39-macosx_12_0_arm64.whl.metadata
+  Using cached scikit_learn-1.3.0-cp39-cp39-macosx_12_0_arm64.whl.metadata (11 kB)
+Collecting strictyaml<2.0.0,>=1.3.2 (from -r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/requirements.txt (line 8))
+  Using cached strictyaml-1.7.3-py3-none-any.whl (123 kB)
+Collecting ruamel.yaml<1.0.0,>=0.16.12 (from -r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/requirements.txt (line 9))
+  Obtaining dependency information for ruamel.yaml<1.0.0,>=0.16.12 from https://files.pythonhosted.org/packages/d9/0e/2a05efa11ea33513fbdf4a2e2576fe94fd8fa5ad226dbb9c660886390974/ruamel.yaml-0.17.32-py3-none-any.whl.metadata
+  Using cached ruamel.yaml-0.17.32-py3-none-any.whl.metadata (17 kB)
+Collecting feature-engine<1.6.0,>=1.0.2 (from -r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/requirements.txt (line 10))
+  Using cached feature_engine-1.5.2-py2.py3-none-any.whl (290 kB)
+Collecting joblib<2.0.0,>=1.0.1 (from -r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/requirements.txt (line 11))
+  Obtaining dependency information for joblib<2.0.0,>=1.0.1 from https://files.pythonhosted.org/packages/10/40/d551139c85db202f1f384ba8bcf96aca2f329440a844f924c8a0040b6d02/joblib-1.3.2-py3-none-any.whl.metadata
+  Using cached joblib-1.3.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting pytest<8.0.0,>=7.2.0 (from -r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/test_requirements.txt (line 4))
+  Obtaining dependency information for pytest<8.0.0,>=7.2.0 from https://files.pythonhosted.org/packages/df/d0/e192c4275aecabf74faa1aacd75ef700091913236ec78b1a98f62a2412ee/pytest-7.4.2-py3-none-any.whl.metadata
+  Downloading pytest-7.4.2-py3-none-any.whl.metadata (7.9 kB)
+Collecting python-dateutil>=2.8.1 (from pandas<2.0.0,>=1.3.5->-r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/requirements.txt (line 5))
+  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Collecting pytz>=2020.1 (from pandas<2.0.0,>=1.3.5->-r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/requirements.txt (line 5))
+  Obtaining dependency information for pytz>=2020.1 from https://files.pythonhosted.org/packages/32/4d/aaf7eff5deb402fd9a24a1449a8119f00d74ae9c2efa79f8ef9994261fc2/pytz-2023.3.post1-py2.py3-none-any.whl.metadata
+  Downloading pytz-2023.3.post1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting typing-extensions>=4.2.0 (from pydantic<2.0.0,>=1.8.1->-r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/requirements.txt (line 6))
+  Obtaining dependency information for typing-extensions>=4.2.0 from https://files.pythonhosted.org/packages/ec/6b/63cc3df74987c36fe26157ee12e09e8f9db4de771e0f3404263117e75b95/typing_extensions-4.7.1-py3-none-any.whl.metadata
+  Using cached typing_extensions-4.7.1-py3-none-any.whl.metadata (3.1 kB)
+Collecting scipy>=1.5.0 (from scikit-learn<2.0.0,>=1.1.3->-r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/requirements.txt (line 7))
+  Obtaining dependency information for scipy>=1.5.0 from https://files.pythonhosted.org/packages/77/31/b063f21370c6050a663aae5a9868d2fe112b21caeface3c248016dfea092/scipy-1.11.2-cp39-cp39-macosx_12_0_arm64.whl.metadata
+  Using cached scipy-1.11.2-cp39-cp39-macosx_12_0_arm64.whl.metadata (54 kB)
+Collecting threadpoolctl>=2.0.0 (from scikit-learn<2.0.0,>=1.1.3->-r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/requirements.txt (line 7))
+  Obtaining dependency information for threadpoolctl>=2.0.0 from https://files.pythonhosted.org/packages/81/12/fd4dea011af9d69e1cad05c75f3f7202cdcbeac9b712eea58ca779a72865/threadpoolctl-3.2.0-py3-none-any.whl.metadata
+  Using cached threadpoolctl-3.2.0-py3-none-any.whl.metadata (10.0 kB)
+Collecting ruamel.yaml.clib>=0.2.7 (from ruamel.yaml<1.0.0,>=0.16.12->-r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/requirements.txt (line 9))
+  Using cached ruamel.yaml.clib-0.2.7-cp39-cp39-macosx_12_0_arm64.whl (130 kB)
+Collecting statsmodels>=0.11.1 (from feature-engine<1.6.0,>=1.0.2->-r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/requirements.txt (line 10))
+  Using cached statsmodels-0.14.0-cp39-cp39-macosx_11_0_arm64.whl (9.4 MB)
+Collecting iniconfig (from pytest<8.0.0,>=7.2.0->-r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/test_requirements.txt (line 4))
+  Using cached iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+Collecting packaging (from pytest<8.0.0,>=7.2.0->-r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/test_requirements.txt (line 4))
+  Using cached packaging-23.1-py3-none-any.whl (48 kB)
+Collecting pluggy<2.0,>=0.12 (from pytest<8.0.0,>=7.2.0->-r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/test_requirements.txt (line 4))
+  Obtaining dependency information for pluggy<2.0,>=0.12 from https://files.pythonhosted.org/packages/05/b8/42ed91898d4784546c5f06c60506400548db3f7a4b3fb441cba4e5c17952/pluggy-1.3.0-py3-none-any.whl.metadata
+  Using cached pluggy-1.3.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting exceptiongroup>=1.0.0rc8 (from pytest<8.0.0,>=7.2.0->-r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/test_requirements.txt (line 4))
+  Obtaining dependency information for exceptiongroup>=1.0.0rc8 from https://files.pythonhosted.org/packages/ad/83/b71e58666f156a39fb29417e4c8ca4bc7400c0dd4ed9e8842ab54dc8c344/exceptiongroup-1.1.3-py3-none-any.whl.metadata
+  Using cached exceptiongroup-1.1.3-py3-none-any.whl.metadata (6.1 kB)
+Collecting tomli>=1.0.0 (from pytest<8.0.0,>=7.2.0->-r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/test_requirements.txt (line 4))
+  Using cached tomli-2.0.1-py3-none-any.whl (12 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.1->pandas<2.0.0,>=1.3.5->-r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/requirements.txt (line 5))
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting patsy>=0.5.2 (from statsmodels>=0.11.1->feature-engine<1.6.0,>=1.0.2->-r /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-05-production-model-package/requirements/requirements.txt (line 10))
+  Using cached patsy-0.5.3-py2.py3-none-any.whl (233 kB)
+Using cached numpy-1.25.2-cp39-cp39-macosx_11_0_arm64.whl (14.0 MB)
+Using cached pydantic-1.10.12-cp39-cp39-macosx_11_0_arm64.whl (2.6 MB)
+Using cached scikit_learn-1.3.0-cp39-cp39-macosx_12_0_arm64.whl (9.5 MB)
+Using cached ruamel.yaml-0.17.32-py3-none-any.whl (112 kB)
+Using cached joblib-1.3.2-py3-none-any.whl (302 kB)
+Downloading pytest-7.4.2-py3-none-any.whl (324 kB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/324.5 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m324.5/324.5 kB[0m [31m8.6 MB/s[0m eta [36m0:00:00[0m
+[?25hUsing cached exceptiongroup-1.1.3-py3-none-any.whl (14 kB)
+Using cached pluggy-1.3.0-py3-none-any.whl (18 kB)
+Downloading pytz-2023.3.post1-py2.py3-none-any.whl (502 kB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/502.5 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m502.5/502.5 kB[0m [31m26.3 MB/s[0m eta [36m0:00:00[0m
+[?25hUsing cached scipy-1.11.2-cp39-cp39-macosx_12_0_arm64.whl (29.6 MB)
+Using cached threadpoolctl-3.2.0-py3-none-any.whl (15 kB)
+Using cached typing_extensions-4.7.1-py3-none-any.whl (33 kB)
+Installing collected packages: pytz, typing-extensions, tomli, threadpoolctl, six, ruamel.yaml.clib, pluggy, packaging, numpy, joblib, iniconfig, exceptiongroup, scipy, ruamel.yaml, python-dateutil, pytest, pydantic, patsy, strictyaml, scikit-learn, pandas, statsmodels, feature-engine
+Successfully installed exceptiongroup-1.1.3 feature-engine-1.5.2 iniconfig-2.0.0 joblib-1.3.2 numpy-1.25.2 packaging-23.1 pandas-1.5.3 patsy-0.5.3 pluggy-1.3.0 pydantic-1.10.12 pytest-7.4.2 python-dateutil-2.8.2 pytz-2023.3.post1 ruamel.yaml-0.17.32 ruamel.yaml.clib-0.2.7 scikit-learn-1.3.0 scipy-1.11.2 six-1.16.0 statsmodels-0.14.0 strictyaml-1.7.3 threadpoolctl-3.2.0 tomli-2.0.1 typing-extensions-4.7.1

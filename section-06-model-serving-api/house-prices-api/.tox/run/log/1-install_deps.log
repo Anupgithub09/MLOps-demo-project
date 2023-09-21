@@ -1,0 +1,161 @@
+name: run
+run_id: install_deps
+env HOME: /Users/adash
+env TMPDIR: /var/folders/qx/0xgmv3nd2tdczjpql2qv44q00000gp/T/
+env LANG: en_US.UTF-8
+env TERM: xterm-256color
+env PATH: /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox/test_app/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin
+env PYTHONHASHSEED: 2894121001
+env PIP_DISABLE_PIP_VERSION_CHECK: 1
+env PYTHONIOENCODING: utf-8
+env PYTHONPATH: .
+env TOX_ENV_NAME: run
+env TOX_WORK_DIR: /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox
+env TOX_ENV_DIR: /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox/test_app
+env VIRTUAL_ENV: /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox/test_app
+env COLUMNS: 132
+env LINES: 17
+metadata pid: 18783
+cwd: /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api
+allow: /Users/adash/Learning/MlOps/ML Deployment/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox/test_app/bin/*
+cmd: pip install -r test_requirements.txt
+exit_code: 0
+Collecting uvicorn<0.30.0,>=0.20.0 (from -r requirements.txt (line 1))
+  Obtaining dependency information for uvicorn<0.30.0,>=0.20.0 from https://files.pythonhosted.org/packages/79/96/b0882a1c3f7ef3dd86879e041212ae5b62b4bd352320889231cc735a8e8f/uvicorn-0.23.2-py3-none-any.whl.metadata
+  Using cached uvicorn-0.23.2-py3-none-any.whl.metadata (6.2 kB)
+Collecting fastapi<1.0.0,>=0.88.0 (from -r requirements.txt (line 2))
+  Obtaining dependency information for fastapi<1.0.0,>=0.88.0 from https://files.pythonhosted.org/packages/76/e5/ca411b260caa4e72f9ac5482f331fe74fd4eb5b97aa74d1d2806ccf07e2c/fastapi-0.103.1-py3-none-any.whl.metadata
+  Downloading fastapi-0.103.1-py3-none-any.whl.metadata (24 kB)
+Collecting python-multipart<0.1.0,>=0.0.5 (from -r requirements.txt (line 3))
+  Downloading python_multipart-0.0.6-py3-none-any.whl (45 kB)
+[?25l     [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/45.7 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m45.7/45.7 kB[0m [31m5.4 MB/s[0m eta [36m0:00:00[0m
+[?25hCollecting pydantic<1.12.0,>=1.10.4 (from -r requirements.txt (line 4))
+  Obtaining dependency information for pydantic<1.12.0,>=1.10.4 from https://files.pythonhosted.org/packages/24/5c/7d600cf0c0c4fa577c33bafd4a7ee567bb19552dbd093b0d4c756ea6cc13/pydantic-1.10.12-cp39-cp39-macosx_11_0_arm64.whl.metadata
+  Using cached pydantic-1.10.12-cp39-cp39-macosx_11_0_arm64.whl.metadata (149 kB)
+Collecting typing_extensions<5.0.0,>=4.2.0 (from -r requirements.txt (line 5))
+  Obtaining dependency information for typing_extensions<5.0.0,>=4.2.0 from https://files.pythonhosted.org/packages/24/21/7d397a4b7934ff4028987914ac1044d3b7d52712f30e2ac7a2ae5bc86dd0/typing_extensions-4.8.0-py3-none-any.whl.metadata
+  Downloading typing_extensions-4.8.0-py3-none-any.whl.metadata (3.0 kB)
+Collecting loguru<1.0.0,>=0.5.3 (from -r requirements.txt (line 6))
+  Obtaining dependency information for loguru<1.0.0,>=0.5.3 from https://files.pythonhosted.org/packages/03/0a/4f6fed21aa246c6b49b561ca55facacc2a44b87d65b8b92362a8e99ba202/loguru-0.7.2-py3-none-any.whl.metadata
+  Downloading loguru-0.7.2-py3-none-any.whl.metadata (23 kB)
+Collecting tid-regression-model>=3.2.0 (from -r requirements.txt (line 8))
+  Downloading tid_regression_model-3.2.0-py3-none-any.whl (191 kB)
+[?25l     [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/191.1 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m191.1/191.1 kB[0m [31m11.6 MB/s[0m eta [36m0:00:00[0m
+[?25hCollecting feature-engine<1.6.0,>=1.0.2 (from -r requirements.txt (line 9))
+  Using cached feature_engine-1.5.2-py2.py3-none-any.whl (290 kB)
+Collecting pytest<8.0.0,>=7.2.0 (from -r test_requirements.txt (line 4))
+  Obtaining dependency information for pytest<8.0.0,>=7.2.0 from https://files.pythonhosted.org/packages/df/d0/e192c4275aecabf74faa1aacd75ef700091913236ec78b1a98f62a2412ee/pytest-7.4.2-py3-none-any.whl.metadata
+  Using cached pytest-7.4.2-py3-none-any.whl.metadata (7.9 kB)
+Collecting requests<2.50.0,>=2.28.0 (from -r test_requirements.txt (line 5))
+  Obtaining dependency information for requests<2.50.0,>=2.28.0 from https://files.pythonhosted.org/packages/70/8e/0e2d847013cb52cd35b38c009bb167a1a26b2ce6cd6965bf26b47bc0bf44/requests-2.31.0-py3-none-any.whl.metadata
+  Using cached requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting httpx<0.50.0,>=0.23.2 (from -r test_requirements.txt (line 6))
+  Obtaining dependency information for httpx<0.50.0,>=0.23.2 from https://files.pythonhosted.org/packages/33/0d/d9ce469af019741c8999711d36b270ff992ceb1a0293f73f9f34fdf131e9/httpx-0.25.0-py3-none-any.whl.metadata
+  Downloading httpx-0.25.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting click>=7.0 (from uvicorn<0.30.0,>=0.20.0->-r requirements.txt (line 1))
+  Obtaining dependency information for click>=7.0 from https://files.pythonhosted.org/packages/00/2e/d53fa4befbf2cfa713304affc7ca780ce4fc1fd8710527771b58311a3229/click-8.1.7-py3-none-any.whl.metadata
+  Using cached click-8.1.7-py3-none-any.whl.metadata (3.0 kB)
+Collecting h11>=0.8 (from uvicorn<0.30.0,>=0.20.0->-r requirements.txt (line 1))
+  Using cached h11-0.14.0-py3-none-any.whl (58 kB)
+Collecting anyio<4.0.0,>=3.7.1 (from fastapi<1.0.0,>=0.88.0->-r requirements.txt (line 2))
+  Obtaining dependency information for anyio<4.0.0,>=3.7.1 from https://files.pythonhosted.org/packages/19/24/44299477fe7dcc9cb58d0a57d5a7588d6af2ff403fdd2d47a246c91a3246/anyio-3.7.1-py3-none-any.whl.metadata
+  Using cached anyio-3.7.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting starlette<0.28.0,>=0.27.0 (from fastapi<1.0.0,>=0.88.0->-r requirements.txt (line 2))
+  Obtaining dependency information for starlette<0.28.0,>=0.27.0 from https://files.pythonhosted.org/packages/58/f8/e2cca22387965584a409795913b774235752be4176d276714e15e1a58884/starlette-0.27.0-py3-none-any.whl.metadata
+  Using cached starlette-0.27.0-py3-none-any.whl.metadata (5.8 kB)
+Collecting numpy<2.0.0,>=1.21.0 (from tid-regression-model>=3.2.0->-r requirements.txt (line 8))
+  Obtaining dependency information for numpy<2.0.0,>=1.21.0 from https://files.pythonhosted.org/packages/b4/ca/fc1c4f8a2a4693ff437d039acf2dc93a190b9494569fbed246f535c44fc8/numpy-1.26.0-cp39-cp39-macosx_11_0_arm64.whl.metadata
+  Downloading numpy-1.26.0-cp39-cp39-macosx_11_0_arm64.whl.metadata (53 kB)
+[?25l     [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/53.5 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m53.5/53.5 kB[0m [31m6.6 MB/s[0m eta [36m0:00:00[0m
+[?25hCollecting pandas<2.0.0,>=1.3.5 (from tid-regression-model>=3.2.0->-r requirements.txt (line 8))
+  Using cached pandas-1.5.3-cp39-cp39-macosx_11_0_arm64.whl (11.0 MB)
+Collecting scikit-learn<2.0.0,>=1.1.3 (from tid-regression-model>=3.2.0->-r requirements.txt (line 8))
+  Obtaining dependency information for scikit-learn<2.0.0,>=1.1.3 from https://files.pythonhosted.org/packages/63/87/6cd5450f0385966bf2a5b865a2043cf68c2a41676193afdbccb40f8719dc/scikit_learn-1.3.0-cp39-cp39-macosx_12_0_arm64.whl.metadata
+  Using cached scikit_learn-1.3.0-cp39-cp39-macosx_12_0_arm64.whl.metadata (11 kB)
+Collecting strictyaml<2.0.0,>=1.3.2 (from tid-regression-model>=3.2.0->-r requirements.txt (line 8))
+  Using cached strictyaml-1.7.3-py3-none-any.whl (123 kB)
+Collecting ruamel.yaml<1.0.0,>=0.16.12 (from tid-regression-model>=3.2.0->-r requirements.txt (line 8))
+  Obtaining dependency information for ruamel.yaml<1.0.0,>=0.16.12 from https://files.pythonhosted.org/packages/d9/0e/2a05efa11ea33513fbdf4a2e2576fe94fd8fa5ad226dbb9c660886390974/ruamel.yaml-0.17.32-py3-none-any.whl.metadata
+  Using cached ruamel.yaml-0.17.32-py3-none-any.whl.metadata (17 kB)
+Collecting joblib<2.0.0,>=1.0.1 (from tid-regression-model>=3.2.0->-r requirements.txt (line 8))
+  Obtaining dependency information for joblib<2.0.0,>=1.0.1 from https://files.pythonhosted.org/packages/10/40/d551139c85db202f1f384ba8bcf96aca2f329440a844f924c8a0040b6d02/joblib-1.3.2-py3-none-any.whl.metadata
+  Using cached joblib-1.3.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting scipy>=1.4.1 (from feature-engine<1.6.0,>=1.0.2->-r requirements.txt (line 9))
+  Obtaining dependency information for scipy>=1.4.1 from https://files.pythonhosted.org/packages/77/31/b063f21370c6050a663aae5a9868d2fe112b21caeface3c248016dfea092/scipy-1.11.2-cp39-cp39-macosx_12_0_arm64.whl.metadata
+  Using cached scipy-1.11.2-cp39-cp39-macosx_12_0_arm64.whl.metadata (54 kB)
+Collecting statsmodels>=0.11.1 (from feature-engine<1.6.0,>=1.0.2->-r requirements.txt (line 9))
+  Using cached statsmodels-0.14.0-cp39-cp39-macosx_11_0_arm64.whl (9.4 MB)
+Collecting iniconfig (from pytest<8.0.0,>=7.2.0->-r test_requirements.txt (line 4))
+  Using cached iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+Collecting packaging (from pytest<8.0.0,>=7.2.0->-r test_requirements.txt (line 4))
+  Using cached packaging-23.1-py3-none-any.whl (48 kB)
+Collecting pluggy<2.0,>=0.12 (from pytest<8.0.0,>=7.2.0->-r test_requirements.txt (line 4))
+  Obtaining dependency information for pluggy<2.0,>=0.12 from https://files.pythonhosted.org/packages/05/b8/42ed91898d4784546c5f06c60506400548db3f7a4b3fb441cba4e5c17952/pluggy-1.3.0-py3-none-any.whl.metadata
+  Using cached pluggy-1.3.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting exceptiongroup>=1.0.0rc8 (from pytest<8.0.0,>=7.2.0->-r test_requirements.txt (line 4))
+  Obtaining dependency information for exceptiongroup>=1.0.0rc8 from https://files.pythonhosted.org/packages/ad/83/b71e58666f156a39fb29417e4c8ca4bc7400c0dd4ed9e8842ab54dc8c344/exceptiongroup-1.1.3-py3-none-any.whl.metadata
+  Using cached exceptiongroup-1.1.3-py3-none-any.whl.metadata (6.1 kB)
+Collecting tomli>=1.0.0 (from pytest<8.0.0,>=7.2.0->-r test_requirements.txt (line 4))
+  Using cached tomli-2.0.1-py3-none-any.whl (12 kB)
+Collecting charset-normalizer<4,>=2 (from requests<2.50.0,>=2.28.0->-r test_requirements.txt (line 5))
+  Obtaining dependency information for charset-normalizer<4,>=2 from https://files.pythonhosted.org/packages/d3/d8/50a33f82bdf25e71222a55cef146310e3e9fe7d5790be5281d715c012eae/charset_normalizer-3.2.0-cp39-cp39-macosx_11_0_arm64.whl.metadata
+  Using cached charset_normalizer-3.2.0-cp39-cp39-macosx_11_0_arm64.whl.metadata (31 kB)
+Collecting idna<4,>=2.5 (from requests<2.50.0,>=2.28.0->-r test_requirements.txt (line 5))
+  Using cached idna-3.4-py3-none-any.whl (61 kB)
+Collecting urllib3<3,>=1.21.1 (from requests<2.50.0,>=2.28.0->-r test_requirements.txt (line 5))
+  Obtaining dependency information for urllib3<3,>=1.21.1 from https://files.pythonhosted.org/packages/9b/81/62fd61001fa4b9d0df6e31d47ff49cfa9de4af03adecf339c7bc30656b37/urllib3-2.0.4-py3-none-any.whl.metadata
+  Downloading urllib3-2.0.4-py3-none-any.whl.metadata (6.6 kB)
+Collecting certifi>=2017.4.17 (from requests<2.50.0,>=2.28.0->-r test_requirements.txt (line 5))
+  Obtaining dependency information for certifi>=2017.4.17 from https://files.pythonhosted.org/packages/4c/dd/2234eab22353ffc7d94e8d13177aaa050113286e93e7b40eae01fbf7c3d9/certifi-2023.7.22-py3-none-any.whl.metadata
+  Using cached certifi-2023.7.22-py3-none-any.whl.metadata (2.2 kB)
+Collecting httpcore<0.19.0,>=0.18.0 (from httpx<0.50.0,>=0.23.2->-r test_requirements.txt (line 6))
+  Obtaining dependency information for httpcore<0.19.0,>=0.18.0 from https://files.pythonhosted.org/packages/ac/97/724afbb7925339f6214bf1fdb5714d1a462690466832bf8fb3fd497649f1/httpcore-0.18.0-py3-none-any.whl.metadata
+  Downloading httpcore-0.18.0-py3-none-any.whl.metadata (18 kB)
+Collecting sniffio (from httpx<0.50.0,>=0.23.2->-r test_requirements.txt (line 6))
+  Using cached sniffio-1.3.0-py3-none-any.whl (10 kB)
+Collecting python-dateutil>=2.8.1 (from pandas<2.0.0,>=1.3.5->tid-regression-model>=3.2.0->-r requirements.txt (line 8))
+  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Collecting pytz>=2020.1 (from pandas<2.0.0,>=1.3.5->tid-regression-model>=3.2.0->-r requirements.txt (line 8))
+  Obtaining dependency information for pytz>=2020.1 from https://files.pythonhosted.org/packages/32/4d/aaf7eff5deb402fd9a24a1449a8119f00d74ae9c2efa79f8ef9994261fc2/pytz-2023.3.post1-py2.py3-none-any.whl.metadata
+  Using cached pytz-2023.3.post1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting ruamel.yaml.clib>=0.2.7 (from ruamel.yaml<1.0.0,>=0.16.12->tid-regression-model>=3.2.0->-r requirements.txt (line 8))
+  Using cached ruamel.yaml.clib-0.2.7-cp39-cp39-macosx_12_0_arm64.whl (130 kB)
+Collecting threadpoolctl>=2.0.0 (from scikit-learn<2.0.0,>=1.1.3->tid-regression-model>=3.2.0->-r requirements.txt (line 8))
+  Obtaining dependency information for threadpoolctl>=2.0.0 from https://files.pythonhosted.org/packages/81/12/fd4dea011af9d69e1cad05c75f3f7202cdcbeac9b712eea58ca779a72865/threadpoolctl-3.2.0-py3-none-any.whl.metadata
+  Using cached threadpoolctl-3.2.0-py3-none-any.whl.metadata (10.0 kB)
+Collecting patsy>=0.5.2 (from statsmodels>=0.11.1->feature-engine<1.6.0,>=1.0.2->-r requirements.txt (line 9))
+  Using cached patsy-0.5.3-py2.py3-none-any.whl (233 kB)
+Collecting six (from patsy>=0.5.2->statsmodels>=0.11.1->feature-engine<1.6.0,>=1.0.2->-r requirements.txt (line 9))
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Using cached uvicorn-0.23.2-py3-none-any.whl (59 kB)
+Downloading fastapi-0.103.1-py3-none-any.whl (66 kB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/66.2 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m66.2/66.2 kB[0m [31m5.7 MB/s[0m eta [36m0:00:00[0m
+[?25hUsing cached pydantic-1.10.12-cp39-cp39-macosx_11_0_arm64.whl (2.6 MB)
+Downloading typing_extensions-4.8.0-py3-none-any.whl (31 kB)
+Downloading loguru-0.7.2-py3-none-any.whl (62 kB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/62.5 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━[0m [32m41.0/62.5 kB[0m [31m21.9 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m62.5/62.5 kB[0m [31m822.0 kB/s[0m eta [36m0:00:00[0m
+[?25hUsing cached pytest-7.4.2-py3-none-any.whl (324 kB)
+Using cached requests-2.31.0-py3-none-any.whl (62 kB)
+Downloading httpx-0.25.0-py3-none-any.whl (75 kB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/75.7 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m75.7/75.7 kB[0m [31m8.1 MB/s[0m eta [36m0:00:00[0m
+[?25hUsing cached anyio-3.7.1-py3-none-any.whl (80 kB)
+Using cached certifi-2023.7.22-py3-none-any.whl (158 kB)
+Using cached charset_normalizer-3.2.0-cp39-cp39-macosx_11_0_arm64.whl (124 kB)
+Using cached click-8.1.7-py3-none-any.whl (97 kB)
+Using cached exceptiongroup-1.1.3-py3-none-any.whl (14 kB)
+Downloading httpcore-0.18.0-py3-none-any.whl (76 kB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/76.0 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m76.0/76.0 kB[0m [31m8.9 MB/s[0m eta [36m0:00:00[0m
+[?25hUsing cached joblib-1.3.2-py3-none-any.whl (302 kB)
+Downloading numpy-1.26.0-cp39-cp39-macosx_11_0_arm64.whl (14.0 MB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/14.0 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;197m━[0m[38;5;197m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.6/14.0 MB[0m [31m19.7 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.5/14.0 MB[0m [31m20.2 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.9/14.0 MB[0m [31m20.1 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.9/14.0 MB[0m [31m20.1 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2.1/14.0 MB[0m [31m11.1 MB/s[0m eta [36m0:00:02[0m[2K   [38;5;197m━━━━━━━[0m[38;5;197m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2.6/14.0 MB[0m [31m11.2 MB/s[0m eta [36m0:00:02[0m[2K   [38;5;197m━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.2/14.0 MB[0m [31m11.8 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.9/14.0 MB[0m [31m12.4 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m4.7/14.0 MB[0m [31m13.2 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━[0m[38;5;197m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m5.5/14.0 MB[0m [31m13.8 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━[0m[38;5;197m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━[0m [32m6.2/14.0 MB[0m [31m14.2 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━[0m[38;5;197m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━[0m [32m7.0/14.0 MB[0m [31m14.7 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━[0m [32m7.7/14.0 MB[0m [31m14.9 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━[0m [32m8.5/14.0 MB[0m [31m15.2 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━[0m [32m9.2/14.0 MB[0m [31m15.5 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;197m╸[0m[38;5;237m━━━━━━━━━━━━[0m [32m9.8/14.0 MB[0m [31m15.4 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━[0m [32m10.2/14.0 MB[0m [31m15.3 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;197m╸[0m[38;5;237m━━━━━━━━━[0m [32m10.7/14.0 MB[0m [31m14.9 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━[0m [32m11.2/14.0 MB[0m [31m14.5 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;197m╸[0m[38;5;237m━━━━━━[0m [32m11.7/14.0 MB[0m [31m14.3 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;197m╸[0m[38;5;237m━━━━━[0m [32m12.2/14.0 MB[0m [31m15.6 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━[0m [32m12.7/14.0 MB[0m [31m15.7 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;197m╸[0m[38;5;237m━━[0m [32m13.1/14.0 MB[0m [31m15.7 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m [32m13.7/14.0 MB[0m [31m15.3 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;197m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;197m╸[0m [32m14.0/14.0 MB[0m [31m15.3 MB/s[0m eta [36m0:00:01[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m14.0/14.0 MB[0m [31m14.6 MB/s[0m eta [36m0:00:00[0m
+[?25hUsing cached pluggy-1.3.0-py3-none-any.whl (18 kB)
+Using cached ruamel.yaml-0.17.32-py3-none-any.whl (112 kB)
+Using cached scikit_learn-1.3.0-cp39-cp39-macosx_12_0_arm64.whl (9.5 MB)
+Using cached scipy-1.11.2-cp39-cp39-macosx_12_0_arm64.whl (29.6 MB)
+Using cached starlette-0.27.0-py3-none-any.whl (66 kB)
+Downloading urllib3-2.0.4-py3-none-any.whl (123 kB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/123.9 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;70m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m123.9/123.9 kB[0m [31m9.3 MB/s[0m eta [36m0:00:00[0m
+[?25hUsing cached pytz-2023.3.post1-py2.py3-none-any.whl (502 kB)
+Using cached threadpoolctl-3.2.0-py3-none-any.whl (15 kB)
+Installing collected packages: pytz, urllib3, typing_extensions, tomli, threadpoolctl, sniffio, six, ruamel.yaml.clib, python-multipart, pluggy, packaging, numpy, loguru, joblib, iniconfig, idna, h11, exceptiongroup, click, charset-normalizer, certifi, uvicorn, scipy, ruamel.yaml, requests, python-dateutil, pytest, pydantic, patsy, anyio, strictyaml, starlette, scikit-learn, pandas, httpcore, statsmodels, httpx, fastapi, feature-engine, tid-regression-model
+Successfully installed anyio-3.7.1 certifi-2023.7.22 charset-normalizer-3.2.0 click-8.1.7 exceptiongroup-1.1.3 fastapi-0.103.1 feature-engine-1.5.2 h11-0.14.0 httpcore-0.18.0 httpx-0.25.0 idna-3.4 iniconfig-2.0.0 joblib-1.3.2 loguru-0.7.2 numpy-1.26.0 packaging-23.1 pandas-1.5.3 patsy-0.5.3 pluggy-1.3.0 pydantic-1.10.12 pytest-7.4.2 python-dateutil-2.8.2 python-multipart-0.0.6 pytz-2023.3.post1 requests-2.31.0 ruamel.yaml-0.17.32 ruamel.yaml.clib-0.2.7 scikit-learn-1.3.0 scipy-1.11.2 six-1.16.0 sniffio-1.3.0 starlette-0.27.0 statsmodels-0.14.0 strictyaml-1.7.3 threadpoolctl-3.2.0 tid-regression-model-3.2.0 tomli-2.0.1 typing_extensions-4.8.0 urllib3-2.0.4 uvicorn-0.23.2
